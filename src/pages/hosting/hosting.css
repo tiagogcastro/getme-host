@@ -1,0 +1,122 @@
+.hosting #main {
+    z-index: 2;
+    padding: 140px 0 60px;
+    position: relative;
+}
+
+.hosting #main .main-content .container {
+    max-width: 900px;
+}
+
+.hosting #main .main-content .container .main-content {
+    color: #ffffff;
+    text-align: left;
+    margin: 0 auto;
+    z-index: 99;
+    width: 90%;
+}
+
+.hosting #main .main-content .container .main-content p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.cardsPrice {
+    padding: 120px 0 100px;
+    width: 100%;
+    background: #eeeded;
+    position: relative;
+    z-index: 10;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    height: 300px;
+    background: linear-gradient(to right top, #131c47, #192152, #474c9a, #ac93d2);
+}
+
+.toBottom {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.cardsPrice .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.cardsPrice .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background: #f1f1f6;    
+    box-shadow: 0 4px 9px 0 rgba(23, 28, 33, 0.06);
+    border-radius: 12px 12px 0 0;
+}
+
+.cardsPrice .cards .card h3 {
+    color: rgb(51, 44, 68);
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+.cardsPrice .cards .card h1 {
+    color: rgb(51, 44, 68);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-bottom: 2rem;
+}
+
+.cardsPrice .cards .card h1 sup {
+    color: rgb(106, 97, 129);
+    margin-right: 0.3rem;
+    font-size: 1.8rem;
+}
+
+.cardsPrice .cards .card h1 sub {
+    color:rgba(122, 110, 153, 0.705);
+    font-size: 1.1rem;
+}
+
+.cardsPrice .cards .card p {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.cardsPrice .cards .card .info p {
+    font-size: 1rem;
+    color: rgb(117, 109, 138);
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.cardsPrice .cards .card a {
+    padding: 12px 0;
+    text-align: center;
+    width: 80%;
+    background: #474c9a;
+    color: #f9f9f9;
+    margin-top: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cardsPrice .cards .card a:hover {
+    background: #d6413c
+}
