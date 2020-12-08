@@ -85,31 +85,6 @@
     padding: 0 0 4rem;
 }
 
-#features .container .features-container-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 100px;
-
-}
-#features .container .features-container-content h1 {
-    margin-bottom: 0.7125em;
-    font-size: 2em;
-    color: #47495a;
-    width: 90%;
-    line-height: 1.4em;
-}
-
-#features .container .features-container-content p {
-    font-size: 1.4em;
-    width: 90%;
-    line-height: 1.7em;
-    font-weight: 400;
-    margin: 0 0 20px;
-}
 
 #features .container .features-content {
     width: 100%;
@@ -184,6 +159,33 @@
     font-size: 16px;
     line-height: 26px;
     font-family: "Open Sans", sans-serif;
+}
+
+
+#features .container .features-container-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 100px;
+
+}
+#features .container .features-container-content h1 {
+    margin-bottom: 0.7125em;
+    font-size: 2em;
+    color: #47495a;
+    width: 90%;
+    line-height: 1.4em;
+}
+
+#features .container .features-container-content p {
+    font-size: 1.4em;
+    width: 90%;
+    line-height: 1.7em;
+    font-weight: 400;
+    margin: 0 0 20px;
 }
 
 .myFooter {

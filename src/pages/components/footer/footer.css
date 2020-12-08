@@ -16,7 +16,7 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 40px;   
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
@@ -164,7 +164,7 @@
     color: rgb(182, 182, 182);
 }
 
-.footer .footerEnd .madein {
+.footer .footerEnd .copyright {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -172,7 +172,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.footer .footerEnd .madein p {
+.footer .footerEnd .copyright p {
     color: #fff;
     font-size: 18px;
     margin: 0 auto;

@@ -2,6 +2,9 @@ import React from 'react';
 import './footer.css';
 import logo320px from '../../../images/logo320px.png'
 
+const date = new Date();
+const year = date.getFullYear();
+
 export default function Footer() {
     return (
     <section className="footer">
@@ -40,8 +43,8 @@ export default function Footer() {
                     <a href="">Termos de Serviço</a>
                     <a href="">Política de Utilização Aceitável</a>
                 </div>
-                <div className="madein">
-                    <p>Feito no BR Brasil</p> 
+                <div className="copyright">
+                    <p>&copy; Copyright - {year} <strong>ProVision</strong></p> 
                 </div>
             </footer>
         </section>
