@@ -4,15 +4,18 @@
 
 .main {
     background: linear-gradient(to right bottom, #131c47, #192152, #474c9a, #ac93d2);
-    padding: 140px 0 0;
+    padding: 140px 0 60px;
     width: 100%;
-    position: relative;
     z-index: 1;
 }
 .main .main-content .container {
-    position: relative;
-    max-width: 700px;
+    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main .main-content .container .main-content {
@@ -20,6 +23,7 @@
     text-align: center;
     z-index: 99;
     width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,12 +34,18 @@
     font-size: 45px;
     font-weight: 700;
     line-height: 52px;
+    max-width: 600px;
+    text-align: left;
+    width: 90%;
     margin-bottom: 1.5rem;
 }
 
 .main .main-content .container .main-content p {
     font-size: 16px;
     font-weight: 400;
+    max-width: 600px;
+    text-align: left;
+    width: 90%;
     line-height: 27px;
     color: rgba(255, 255, 255, 0.85);
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -43,6 +53,11 @@
 
 .main .main-content .container .main-content a {
     margin-top: 3rem;
+}
+
+.main .main-content .container img {
+    max-width: 320px;
+    width: 90%;
 }
 
 .contact {
@@ -68,16 +83,93 @@
     background: #ff3333;
 }
 
-.main .main-content .container-fluid img {
+.quality {
     width: 100%;
-    height: auto;
-    margin: -100px 0 0 0 ;
-    z-index: -1;
+    background: #131c47;
+    padding: 120px 0 140px;
+}
+
+.quality .allQualitys {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+    gap: 8px;
+}
+
+.quality .allQualitys .divQuality {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction:  column;
+    max-width: 700px;
+}
+
+.quality .allQualitys .divQuality h1 {
+    max-width: 500px;
+    font-size: 2.4rem;
+    color: #f2f7fb;
+    margin: 0 auto 2rem;
+ }
+
+.quality .allQualitys .divQuality h1 .strongProvision {
+    display: initial;
+}
+
+.quality .allQualitys .divQuality img {
+   max-width: 420px;
+   width: 90%;
+}
+
+.quality .allQualitys .myTextsQuality {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction:  column;
+    gap: 48px;
+}
+
+.quality .allQualitys .myTextsQuality .texts {
+    max-width: 800px;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ac93d2;
+}
+
+.quality .allQualitys .myTextsQuality .texts:last-child {
+    border-bottom: none;
+}
+
+.quality .allQualitys .myTextsQuality .texts h1{
+    max-width: 400px;
+    color: #dce2e7;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.quality .allQualitys .myTextsQuality .texts strong{
+    max-width: 400px;
+    color: #885dce;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.quality .allQualitys .myTextsQuality .texts p{
+    max-width: 700px;
+    font-weight: 400;
+    color: #9c9c9c;
+    margin: 1rem 0 0;
+    line-height: 1.7rem;
+    font-family: 'Opens sans', sans-serif;
+    font-size: 1.1rem;
 }
 
 #features {
     width: 100%;
     padding: 120px 0 0;
+    position: relative;
 }
 
 #features .container {
@@ -91,16 +183,15 @@
 
 #features .container .contFeat {
     width: 100%;
-    position: relative;
 }
 
-#features .container .features-content {
+.newFeature .features-content {
     width: 100%;
     padding-top: 40px;
     background-image: linear-gradient(-180deg, #f2f7fb 30%, #fff 100%);
 }
 
-#features .container .features-content .myFeatures {
+.newFeature .features-content .myFeatures {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,14 +202,14 @@
     flex-wrap: wrap;
 }
 
-#features .container .features-content .content {
+.newFeature .features-content .content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction:  column;
 }
 
-#features .container .features-content .content h1 {
+.newFeature .features-content .content h1 {
     color: #47495a;
     font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-size: 22px;
@@ -127,7 +218,7 @@
     margin: 0 auto 2rem;
 }
 
-#features .container .features-content .content .features-links {
+.newFeature .features-content .content .features-links {
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -137,29 +228,29 @@
     padding-left: 1.4rem;
 }
 
-#features .container .features-content .content .features-links a {
+.newFeature .features-content .content .features-links a {
     margin-bottom: 1rem;
     color: #666 ;
     transition: 0.3s;
 }
 
-#features .container .features-content .content .features-links a:hover {
+.newFeature .features-content .content .features-links a:hover {
     color: #8b45f5;
 }
 
-#features .container .features-content .content {
+.newFeature .features-content .content {
     max-width: 500px;
     width: 100%;
 }
 
-#features .container .features-content .content img {
+.newFeature .features-content .content img {
     max-width: 432px;
     margin: 0 auto 60px auto;
     width: 100%;
     height: auto;
 }
 
-#features .container .features-content .content p {
+.newFeature .features-content .content p {
     padding-left: 1.5rem;
     text-align: justify;
     font-weight: 400;
@@ -229,10 +320,10 @@
 }
 
 .myFaq .faq h1{
-    max-width: 900px;
-    width: 90%;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto 2rem;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     text-align: center;
     color: #192152;
 }
@@ -282,9 +373,15 @@
     transition: 0.3s;
   }
 
+  @media(max-width: 1300px) {
+    .quality .allQualitys .divQuality h1{
+        text-align: center;
+        max-width: 800px;
+    }
+}
 
 @media(max-width: 1100px) {
-    #features .container .features-content .content img {
+    .newFeature .features-content .content img {
         max-width: 360px;
     }
 }
@@ -293,16 +390,16 @@
     html {
         font-size: 87.5%;
     }
-    #features .container .features-content{
+    .newFeature .features-content{
         flex-direction: column
     }
 
-    #features .container .features-content .content {
+    .newFeature .features-content .content {
         max-width: 720px;
     }
 
-    #features .container .features-content .content img {
-        width: 100%;
+    .newFeature .features-content .content img {
+        width: 80%;
         max-width: 460px;
     }
 }
@@ -316,11 +413,15 @@
 @media(max-width: 540px) {
     .main .main-content .container .main-content h1 {
         font-size: 1.6rem;
-        line-height: 48px;
+        line-height: 36px;
     }
 
-    #features .container .features-content .content img {
+    .newFeature .features-content .content img {
         max-width: 320px;
+    }
+
+    .quality .allQualitys .divQuality h1{
+        font-size: 2rem;
     }
 
     .myFaq .faq h1{
@@ -342,7 +443,7 @@
         max-width: 90%;
     }
 
-    #features .container .features-container-content h1 {
+    .newFeature .features-container-content h1 {
         font-size: 1.8rem;
     }
 
@@ -350,12 +451,12 @@
         font-size: 1.2em;
     }
 
-    #features .container .features-content .content h1{
+    .newFeature .features-content .content h1{
         font-size: 1.6em;
         max-width: 90%;
     }
 
-    #features .container .features-content .content p {
+    .newFeature .features-content .content p {
         font-size: 1.25rem;
         text-align: left;
     }

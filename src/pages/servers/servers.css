@@ -46,13 +46,13 @@
     max-width: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 4px;
     flex-wrap: wrap-reverse;
 }
 
 .servers .main .main-content .container .infos .confere {
-    font-size: 8rem;
+    font-size: 5rem;
 }
 
 .servers .main .main-content .container .infos .texts p {
@@ -105,13 +105,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.atencion .vpsMarketing .texts h2 strong {
+.strongProvision {
     color: #d033ecdf;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 4px;
-    margin-top: 0.8rem;
 }
 
 .atencion .vpsMarketing img {
@@ -133,7 +128,7 @@
     align-items: center;
     border-top: 1px solid #767de0;
     padding-top: 4rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
@@ -234,6 +229,7 @@
     justify-content: center;
     flex-direction:  column;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .location .buttonsLocation .buttonsAndComponents .showComponent .cards {
@@ -242,6 +238,14 @@
     justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
+    max-width: 1400px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.txtCards {
+    max-width: 1400px;
+    width: 100%;
 }
 
 .showComponent .card {
@@ -252,11 +256,22 @@
     padding: 24px;
     background: #dce7f3e7;    
     box-shadow: 0 7px 11px 0 rgba(23, 28, 33, 0.11);
-    border-radius: 12px;
+    border-radius: 12px;    
+    max-width: 400px;
+    width: 100%;
 }
 
 .showComponent .card h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+.showComponent .card h1 sup{
+    font-size: 1.4rem;
+}
+
+.showComponent .card h1 sub{
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 .showComponent .card h3 {
@@ -302,6 +317,10 @@
 
 .showComponent .card .buttonAccess {
     background: rgb(21, 114, 190);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 .showComponent .card  .buttonAccess:hover {
     background: #da4633

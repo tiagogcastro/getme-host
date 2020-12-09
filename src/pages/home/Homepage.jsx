@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import './homepage.css'
-import retoLeft from '../.././images/svgsBg/retoLeft.svg'
+import cloudHome from '../.././images/svgsBg/cloudHome.svg'
+import rocket from '../.././images/svgsBg/rocket.svg'
+
 import ondas from '../.././images/svgsBg/ondas.svg'
 import {AiFillPhone} from 'react-icons/ai'
 import {BsArrowReturnRight} from 'react-icons/bs'
@@ -42,19 +44,17 @@ export default function HomePage() {
                 <div className="main-content">
                     <div className="container"> 
                         <div className="main-content">
-                            <h1>Tudo que precisa para hospedar seu projeto!</h1>
-                            <p>Mais de 145.000 servidores já foram instanciados na VirtusHost. </p>
-                            <a href="#" className="contact"><AiFillPhone /> Fale conosco</a>
+                            <h1>Hospede seu site com qualidade.<br/> Venha com a <strong className="strongProvision">ProVision.</strong></h1>
+                            <p>
+                            Já somos mais de 100.000 servidores vendidos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                            <a href="https://financeiro.provision.gg/contact.php" className="contact"><AiFillPhone/> Contato</a>
                         </div>
+                        <img src={cloudHome} alt=""/>
                     </div>
-                    <div className="container-fluid">
-                        <div className="fluid">
-                            <img src="https://www.virtushost.net/pt/images/hero-illustration-5.png" alt=""/>
-                        </div>
-                    </div>
-                    <img src={retoLeft} alt="" className="svgPosition svgLeft"/>
                 </div>
             </main>
+            
             <section id="features">
                 <div className="container">
                     <div className="contFeat">
@@ -65,35 +65,61 @@ export default function HomePage() {
                                 De projetos pequenos que necessitam de melhor custo/benefício, à projetos grandes que necessitam de maior performance e confiabilidade, nós temos a solução ideal para o seu projeto!
                             </p>
                         </div>
-                        <img src={ondas} alt="" className="toBottom " />
                     </div>
-                    <div className="features-content">
-                        <div className="myFeatures">
-                        <div className="content">
-                            <img src="https://www.virtushost.net/pt/images/tour-3.png" alt=""/>
-                            <h1>Soluções para Projetos Menores</h1>
-                            <p>Serviços na nuvem com recursos totalmente dedicados e isolados, <strong>excelente performance e garantia de estabilidade!</strong>Ideal para aplicações mais pesadas.
-                            </p>
-                            <div className="features-links">
-                                <a href="#">&gt; Hospedagem de Sites</a>
-                                <a href="#">&gt; Servidor Cloud de Alta Perfomace</a>
-                                <a href="#">&gt; Datacenter Virtual</a>
-                            </div>
+                </div>
+                <img src={ondas} alt="" className="toBottom " />
+            </section>
+            <section className="quality">
+                <div className="allQualitys">
+                    <div className="divQuality">
+                        <h1>Por que você deve escolher a <strong className="strongProvision">ProVision</strong> para hospedagem?</h1>
+                        <img src={rocket} alt=""/>
+                    </div>
+                    <div className="myTextsQuality">
+                        <div className="texts">
+                            <h1>Facilidade</h1>
+                            <strong>Depois poem algum texto top aqui</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates beatae eligendi id perspiciatis a voluptatum optio? Debitis maxime accusamus facilis aut, obcaecati laudantium numquam quaerat dolor harum mollitia. Ab.</p>
                         </div>
-                        <div className="content">
-                            <img src="https://www.virtushost.net/pt/images/tour-4.png" alt=""/>
-                            <h1>Soluções para Projetos Menores</h1>
-                            <p>Serviços na nuvem com recursos garantidos, totalmente escaláveis, que <strong>permitem a expansão conforme o seu projeto cresce</strong>, e que possuem um ótimo custo/benefício.</p>
-                            <div className="features-links">
-                                <a href="#">&gt; Hospedagem de Sites</a>
-                                <a href="#">&gt; Servidor Cloud Escalável</a>
-                                <a href="#">&gt; Hospedagens de Jogos</a>
-                            </div>
+                        <div className="texts">
+                            <h1>Segurança</h1>
+                            <strong>Proteção 24h para sua hospedagem</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates beatae eligendi id perspiciatis a voluptatum optio? Debitis maxime accusamus facilis aut, obcaecati laudantium numquam quaerat dolor harum mollitia. Ab.</p>
                         </div>
+                        <div className="texts">
+                            <h1>Velocidade</h1>
+                            <strong>Processadores da melhor qualidade no mercado</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates beatae eligendi id perspiciatis a voluptatum optio? Debitis maxime accusamus facilis aut, obcaecati laudantium numquam quaerat dolor harum mollitia. Ab.</p>
                         </div>
                     </div>
                 </div>
-
+            </section>
+            <section className="newFeature">
+                <div className="features-content">
+                    <div className="myFeatures">
+                    <div className="content">
+                        <img src="https://www.virtushost.net/pt/images/tour-3.png" alt=""/>
+                        <h1>Soluções para Projetos Menores</h1>
+                        <p>Serviços na nuvem com recursos totalmente dedicados e isolados, <strong>excelente performance e garantia de estabilidade!</strong>Ideal para aplicações mais pesadas.
+                        </p>
+                        <div className="features-links">
+                            <a href="#">&gt; Hospedagem de Sites</a>
+                            <a href="#">&gt; Servidor Cloud de Alta Perfomace</a>
+                            <a href="#">&gt; Datacenter Virtual</a>
+                        </div>
+                    </div>
+                    <div className="content">
+                        <img src="https://www.virtushost.net/pt/images/tour-4.png" alt=""/>
+                        <h1>Soluções para Projetos Menores</h1>
+                        <p>Serviços na nuvem com recursos garantidos, totalmente escaláveis, que <strong>permitem a expansão conforme o seu projeto cresce</strong>, e que possuem um ótimo custo/benefício.</p>
+                        <div className="features-links">
+                            <a href="#">&gt; Hospedagem de Sites</a>
+                            <a href="#">&gt; Servidor Cloud Escalável</a>
+                            <a href="#">&gt; Hospedagens de Jogos</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </section>
             {chat()}
             <section className="myFaq">

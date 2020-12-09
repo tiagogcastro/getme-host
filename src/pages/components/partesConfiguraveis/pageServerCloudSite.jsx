@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Brasil from '../../../images/svgsBg/brasil.svg'
 import usa from '../../../images/svgsBg/usa.svg'
 import { FcCheckmark } from 'react-icons/fc'
+import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 
 // Cards com o valor em moeda do BRASIL
 const valuesBr = [
@@ -20,7 +21,9 @@ const valuesBr = [
             'Tráfego Ilimitado',
             'IP Dedicado',
         ],
-        linkButton: "https://google.com"
+        linkButton: "https://google.com",
+        buttonText: 'Assinar agora'
+
     },
     {
         title: '1GB',
@@ -37,7 +40,8 @@ const valuesBr = [
             'Tráfego Ilimitado',
             'IP Dedicado',
         ],
-        linkButton: "https://google.com"
+        linkButton: "https://google.com",
+        buttonText: 'Assinar agora '
     },
 
     {
@@ -55,7 +59,9 @@ const valuesBr = [
             'Tráfego Ilimitado',
             'IP Dedicado',
         ],
-        linkButton: "https://google.com"
+        linkButton: "https://google.com",
+        buttonText: 'Assinar agora '
+
     }
 ]
 
@@ -76,7 +82,9 @@ const valuesUsa = [
             'Tráfego Ilimitado',
             'IP Dedicado',
         ],
-        linkButton: "https://google.com"
+        linkButton: "https://google.com",
+        buttonText: 'Assinar agora '
+
     },
     {
         title: 'Cloud 1GB',
@@ -93,7 +101,9 @@ const valuesUsa = [
             'Tráfego Ilimitado',
             'IP Dedicado',
         ],
-        linkButton: "https://google.com"
+        linkButton: "https://google.com",
+        buttonText: 'Assinar agora '
+
     },
     {
         title: 'Cloud 1GB',
@@ -110,7 +120,9 @@ const valuesUsa = [
             'Tráfego Ilimitado',
             'IP Dedicado',
         ],
-        linkButton: "https://google.com"
+        linkButton: "https://google.com",
+        buttonText: 'Assinar agora '
+
     }
 ]
 
@@ -133,7 +145,7 @@ const Br = () => {
                         <p key={index}><FcCheckmark /> {acceptValue}</p>
                     ))}
                 </div>
-                <a className="buttonAccess" href={value.linkButton}>Comprar plano</a>
+                <a className="buttonAccess" href={value.linkButton}>{value.buttonText} <HiOutlineArrowNarrowRight /></a>
             </div>
         ))}
         </>
@@ -159,7 +171,7 @@ const Usa = () => {
                         <p key={index}><FcCheckmark /> {acceptValue}</p>
                     ))}
                 </div>
-                <a className="buttonAccess" href={value.linkButton}>Comprar plano</a>
+                <a className="buttonAccess" href={value.linkButton}>{value.buttonText} <HiOutlineArrowNarrowRight /></a>
             </div>
         ))}
         </>

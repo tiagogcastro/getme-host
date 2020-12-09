@@ -55,10 +55,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:  column;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 90%;
     padding: 90px 0 80px;
-    max-width: 1200px;
+    max-width: 1400px;
+    gap: 28px;
+}
+
+.footer .endSiteFooter img{
+    width: 90%;
+    max-width: 500px;
 }
 
 .footer .endSiteFooter .container-text {
@@ -67,7 +73,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .footer .endSiteFooter .container-text img {
@@ -99,14 +105,12 @@
     line-height: 1.7em;
 }
 
-.footer .endSiteFooter .pay {
-    max-width: 600px;
-    padding-top: 4rem;
+.footer .pay {
     text-align:center;
 }
 
-.footer .endSiteFooter .pay img {
-    width: 80%;
+.footer .pay img {
+    width: 90%;
     border-radius: 6px;
     opacity: .8;
 }
@@ -152,11 +156,14 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: 90%;
+    margin: 0 auto;
     padding: 1rem 0 2rem;
 }
 
 .footer .footerEnd .legal a {
     color: rgba(213, 213, 213, 0.49);
+    text-align: center;
     transition: 0.3s;
 }
 
@@ -169,6 +176,11 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0 ;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
@@ -197,6 +209,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
     }
     .footer .endSiteFooter .container-text {
         max-width:80%;
@@ -217,6 +231,10 @@
         flex-direction: column-reverse;
         max-width: 720px;
     }
+    
+    .footer .footerEnd .container-footer .footer-texts {
+        width: 90%;
+    }
 }
 
 @media(max-width: 540px) {
@@ -229,6 +247,12 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        align-items: center;
+    }
+
+    .footer .footerEnd .container-footer .footer-texts {
+        width: 90%;
+        text-align: center;
     }
 
     .footer .footerEnd .legal {
@@ -247,7 +271,7 @@
     }
 
     .footer .endSiteFooter .container-text h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 
     .footer .contact {
@@ -287,10 +311,6 @@
         justify-content: center;
     }
 
-    .footer .footerEnd .container-footer .footer-texts {
-        width: 90%;
-    }
-        
     .footer .footerEnd .container-footer h5, .footer .footerEnd .container-footer p  {
         margin: 0 auto 0.4rem;
     }

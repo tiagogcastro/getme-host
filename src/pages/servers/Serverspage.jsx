@@ -40,8 +40,8 @@ export default function Serverspage() {
             <div className="atencion">
                 <div className="vpsMarketing">
                     <div className="texts">
-                        <h1>Aqui na <strong>ProVision</strong> é você que sai ganhando !!</h1>
-                        <h2>Nossa empresa tem o sistema de ativação automático após efetuar o pagamento. <br/> <strong> <AiOutlineDoubleRight /> Venha com a gente.</strong></h2>
+                        <h1>Aqui na <strong className="strongProvision">ProVision</strong> é você que sai ganhando !!</h1>
+                        <h2>Nossa empresa tem o sistema de ativação automático após efetuar o pagamento. <br/> <strong className="strongProvision"> <AiOutlineDoubleRight /> Venha com a gente.</strong></h2>
                     </div>
                     <img src={Pay} alt=""/>
                 </div>

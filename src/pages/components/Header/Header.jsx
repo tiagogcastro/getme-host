@@ -3,10 +3,11 @@ import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './header.css';
 
-import {FiMenu} from 'react-icons/fi';
+import {FiMenu, FiLogIn} from 'react-icons/fi';
 import {AiOutlineHome} from 'react-icons/ai';
 import {BsCloudDownload} from 'react-icons/bs'
 import {FaServer} from 'react-icons/fa';
+import {AiFillPhone} from 'react-icons/ai'
 
 import Logo from '../../../images/logo.png'
 
@@ -87,6 +88,18 @@ export default function Header() {
                             className="menu-item-action">
                                <BsCloudDownload/> Servidor Cloud/Vps
                             </Link>
+                        </li>
+                        <li className="menu-item">
+                            <Link to="/servidor-cloud" 
+                            className="menu-item-action">
+                               <AiFillPhone/> Suporte
+                            </Link>
+                        </li>
+                        <li className="menu-item login">
+                            <a target="_blank" href="https://financeiro.provision.gg/index.php?rp=/login" 
+                            className="menu-item-action">
+                               <FiLogIn/> Login
+                            </a>
                         </li>
                     </div>
                 </ul>
