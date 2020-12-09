@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import retoLeft from '../.././images/svgsBg/retoLeft.svg'
+import React from 'react';
 import ondas from '../.././images/svgsBg/ondas.svg'
 import {Cards, ComponentTexts} from './ComponentsHostingpage'
 
@@ -7,8 +6,8 @@ import './hosting.css'
 
 export default function Hostingpage() {
     return (
-        <div className="home hosting">
-            <main id="main">
+        <div key={0} className="home hosting">
+            <main className="main">
                 <div className="main-content">
                     <div className="container">
                         <div className="main-content">

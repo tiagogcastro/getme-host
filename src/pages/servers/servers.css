@@ -1,0 +1,371 @@
+.servers .main {
+    position: relative;
+    padding: 180px 0 140px;
+}
+
+.servers .main .bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -100;
+    left: 0;
+    height: 800px;
+    background: #c4ddf0;
+    transform: skewY(20deg);
+}
+
+.servers .main .main-content .container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 48px;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+.servers .main .main-content .container img {
+    max-width: 600px;
+    width: 90%
+}
+
+.servers .main .main-content .container .infos h1 {
+    max-width: 600px;
+    font-size: 2.8rem;
+    color: #192152;
+}
+
+.servers .main .main-content .container .infos .lead {
+    margin: 2rem 0;
+    max-width: 500px;
+    color: #4c5297;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.servers .main .main-content .container .infos .txtConfere {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap-reverse;
+}
+
+.servers .main .main-content .container .infos .confere {
+    font-size: 8rem;
+}
+
+.servers .main .main-content .container .infos .texts p {
+    max-width: 500px;
+    font-size: 1.2rem;
+    color: #767de0;
+    font-weight: 300;
+}
+
+.atencion {
+    width: 100%;
+    background: linear-gradient(to right top, #131c47, #192152, #474c9a, #ac93d2);
+    padding: 140px 0 60px;
+}
+
+.atencion .vpsMarketing {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.atencion .vpsMarketing .texts {
+    max-width: 600px;
+    width: 90%;
+}
+
+.atencion .vpsMarketing .texts h1 {
+    color: #c8e4fa;
+    font-size: 3rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.atencion .vpsMarketing .texts h1 strong {
+    font-family: cursive;
+    color: #d033ecdf;
+}
+
+.atencion .vpsMarketing .texts h2 {
+    color:#acd6f6;
+    font-size: 1.6rem;
+    max-width: 540px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atencion .vpsMarketing .texts h2 strong {
+    color: #d033ecdf;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-top: 0.8rem;
+}
+
+.atencion .vpsMarketing img {
+    max-width: 500px;
+    margin-top: 6rem;
+    width: 90%;
+}
+
+.location{
+    padding: 100px 0;
+    background: #c8e4fa;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.location .maxWdLocation{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #767de0;
+    padding-top: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location .bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    height: 200px;
+   background: linear-gradient(to right top, #131c47, #192152, #474c9a, #ac93d2);
+}
+
+.location h3 {
+    color: #192152;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.location .buttonsLocation {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.location .buttonsLocation .buttonsAndComponents {
+    background: none;
+    padding: 0;
+}
+
+.location .buttonsLocation .buttonsAndComponents .buttons{
+    display: flex;
+    align-items:center;
+    margin: 0 auto 1rem;
+    max-width: 800px;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.location .buttonsLocation .buttonsAndComponents .buttons button  {
+    background: none;
+    border: 1px solid #767de0;
+    color: #3c4294;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 12px 48px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    outline-color: #767de0;
+    transition: .3s;
+}
+
+.location .buttonsLocation .buttonsAndComponents .buttons button:hover {
+    border: 1px solid #343761;
+
+}
+
+.location .buttonsLocation .buttonsAndComponents .buttons button span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #767de0;
+}
+
+.location .buttonsLocation .buttonsAndComponents .buttons button img {
+    max-width: 24px;
+    width: 100%;
+}
+
+.txtCards p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto 2rem;
+}
+
+.location .buttonsLocation .buttonsAndComponents .bandeira {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.location .buttonsLocation .buttonsAndComponents .bandeira img {
+    text-align: center;
+    max-width: 100px;
+}
+
+.location .buttonsLocation .buttonsAndComponents .showComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:  column;
+    flex-wrap: wrap;
+}
+
+.location .buttonsLocation .buttonsAndComponents .showComponent .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.showComponent .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:  column;
+    padding: 24px;
+    background: #dce7f3e7;    
+    box-shadow: 0 7px 11px 0 rgba(23, 28, 33, 0.11);
+    border-radius: 12px;
+}
+
+.showComponent .card h1 {
+    font-size: 2rem;
+}
+
+.showComponent .card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.location .buttonsLocation .buttonsAndComponents .showComponent .card img {
+    width: 30px;
+}
+.location .buttonsLocation .buttonsAndComponents .showComponent .cards .card .info p {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.showComponent .card .info, .showComponent .card .accept  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction:  column;
+}
+
+.showComponent .card .info {
+    padding-bottom: 2rem;
+}
+
+.showComponent .card .info p, .showComponent .card .accept p {
+    margin-bottom: 0.8rem;
+}
+
+.showComponent .card .accept {
+    padding-top: 2rem;
+    border-top:1px solid rgba(124, 131, 233, 0.8);
+}
+
+.showComponent .card .accept p {
+    font-size: 1.1rem;
+}
+
+.showComponent .card .buttonAccess {
+    background: rgb(21, 114, 190);
+}
+.showComponent .card  .buttonAccess:hover {
+    background: #da4633
+}
+
+@media (max-width:1200px) {
+    .atencion .vpsMarketing, .servers .main .main-content .container  {
+        max-width: 1100px;
+    }
+
+    .atencion .vpsMarketing img {
+        max-width: 600px;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .atencion .vpsMarketing {
+        max-width: 600px;
+    }
+
+    .servers .main .main-content .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:500px) {  
+    .location h3 {
+        width: 90%; 
+    }
+}
+
+@media (max-width:400px) {  
+    .servers .main {
+        padding: 180px 0 60px;
+    }
+
+    .atencion {
+        padding: 80px 0 60px;
+    }
+
+    .atencion .vpsMarketing .texts h1 {
+        font-size: 2.2rem;
+    }
+    
+    .atencion .vpsMarketing .texts h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .location .buttonsLocation .buttonsAndComponents .buttons button {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:300px) {  
+    .servers .main .main-content .container .infos h1 {
+        font-size: 2.2rem;
+    }
+
+    .txtCards p, .servers .main .main-content .container .infos .lead {
+        font-size: 1rem;
+    }
+    .atencion .vpsMarketing .texts h2 {
+        font-size: 1.2rem;
+    }
+}

@@ -4,21 +4,20 @@ import {Link} from 'react-router-dom';
 import './header.css';
 
 import {FiMenu} from 'react-icons/fi';
-import {AiOutlineHome, AiOutlineCloudDownload} from 'react-icons/ai';
+import {AiOutlineHome} from 'react-icons/ai';
 import {BsCloudDownload} from 'react-icons/bs'
 import {FaServer} from 'react-icons/fa';
 
 import Logo from '../../../images/logo.png'
 
 export default function Header() {
-        
     useEffect(() => {
         const menu = document.querySelector('#menu')
+        const header = document.querySelector('.header')
         const getButtonMenuOpen = document.querySelector('.btnMenu_open')
         const getButtonMenuClose = document.querySelector('.btnMenu_close')
         const menu_items = document.querySelectorAll('.menu-item .menu-item-action')
 
-        console.log(getButtonMenuOpen, getButtonMenuClose)
         getButtonMenuOpen.addEventListener('click', () => {
             menu.classList.add('menu_open')
         })  
@@ -32,6 +31,21 @@ export default function Header() {
                 menu.classList.remove('menu_open')
             })
         })
+        
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 20) header.classList.add('menuScroll'); 
+            else header.classList.remove('menuScroll');
+        });
+        // const currentPage = window.location.pathname
+        // const menuItems = document.querySelectorAll('.header .menu-item a')
+
+        // for (let item of menuItems) {
+        //     if(currentPage == item.getAttribute('href')) {
+        //         item.classList.add('active')
+        //     }
+        //     console.log(currentPage)
+        // }
+
     }, [])
     
     return (
@@ -69,8 +83,8 @@ export default function Header() {
                             </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to="/" 
-                            className="menu-item-action buttonLock">
+                            <Link to="/servidor-cloud" 
+                            className="menu-item-action">
                                <BsCloudDownload/> Servidor Cloud/Vps
                             </Link>
                         </li>
@@ -81,12 +95,3 @@ export default function Header() {
     )
 }
 
-// const currentPage =
-// console.log(currentPage)
-const menuItems = document.querySelectorAll('#menu .menu-item')
-
-// for (let item of menuItems) {
-//     if (currentPage.includes(item.getAttribute('href'))) {
-//         item.classList.add('active')
-//     }
-// }

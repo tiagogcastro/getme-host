@@ -144,7 +144,7 @@
     margin-bottom: 1rem;
     font-size: 1em;
     line-height: 1.6em;
-    font-weight: 400;    
+    font-weight: 400; 
 }
 
 .footer .footerEnd .legal {
@@ -165,7 +165,7 @@
 }
 
 .footer .footerEnd .copyright {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0 ;
@@ -249,6 +249,10 @@
     .footer .endSiteFooter .container-text h1 {
         font-size: 2.2em;
     }
+
+    .footer .contact {
+        padding: 14px 24px  ;
+    }
 }
 
 @media(max-width: 360px) {
@@ -276,5 +280,18 @@
 
     .footer .endSiteFooter .container-text h1 {
         font-size: 1.6em;
+    }
+
+    .footer .footerEnd .container-footer {
+        align-items:  center;
+        justify-content: center;
+    }
+
+    .footer .footerEnd .container-footer .footer-texts {
+        width: 90%;
+    }
+        
+    .footer .footerEnd .container-footer h5, .footer .footerEnd .container-footer p  {
+        margin: 0 auto 0.4rem;
     }
 }

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './homepage.css'
-import retoRight from '../.././images/svgsBg/retoRight.svg'
 import retoLeft from '../.././images/svgsBg/retoLeft.svg'
+import ondas from '../.././images/svgsBg/ondas.svg'
+import {AiFillPhone} from 'react-icons/ai'
+import {BsArrowReturnRight} from 'react-icons/bs'
 
 function chat() {
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -16,16 +18,33 @@ function chat() {
     })();
 }
 
+
 export default function HomePage() {
+    useEffect(() => {
+        let Faqbutton = document.getElementsByClassName("faqButton");
+        let i;
+        for (i = 0; i < Faqbutton.length; i++) {
+            Faqbutton[i].addEventListener("click", function() {
+            this.classList.toggle("panelActive");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+        }
+    }, [])
+    
     return (
         <div className="home">
-            <main id="main">
+            <main className="main">
                 <div className="main-content">
                     <div className="container"> 
                         <div className="main-content">
                             <h1>Tudo que precisa para hospedar seu projeto!</h1>
                             <p>Mais de 145.000 servidores já foram instanciados na VirtusHost. </p>
-                            <a href="#" className="contact">Fale conosco</a>
+                            <a href="#" className="contact"><AiFillPhone /> Fale conosco</a>
                         </div>
                     </div>
                     <div className="container-fluid">
@@ -38,12 +57,15 @@ export default function HomePage() {
             </main>
             <section id="features">
                 <div className="container">
-                    <div
-                    className="features-container-content">
-                        <h1>Serviços completos para todas indústrias.</h1>
-                        <p className="lead">
-                            De projetos pequenos que necessitam de melhor custo/benefício, à projetos grandes que necessitam de maior performance e confiabilidade, nós temos a solução ideal para o seu projeto!
-                        </p>
+                    <div className="contFeat">
+                        <div
+                        className="features-container-content">
+                            <h1>Serviços completos para todas indústrias.</h1>
+                            <p className="lead">
+                                De projetos pequenos que necessitam de melhor custo/benefício, à projetos grandes que necessitam de maior performance e confiabilidade, nós temos a solução ideal para o seu projeto!
+                            </p>
+                        </div>
+                        <img src={ondas} alt="" className="toBottom " />
                     </div>
                     <div className="features-content">
                         <div className="myFeatures">
@@ -74,6 +96,32 @@ export default function HomePage() {
 
             </section>
             {chat()}
+            <section className="myFaq">
+                <div className="faq">
+                    <h1>Hospedagem - Perguntas mais frequentes(FAQ)</h1>
+                    <p className="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur molestias, ipsam ea aliquam libero enim.</p>
+                    <div className="faqDiv">
+                        <button className="faqButton"><BsArrowReturnRight/> O que sei la oque tem que preencher espaço para testar aqui</button>
+                        <div className="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+
+                    <div className="faqDiv">
+                        <button className="faqButton"><BsArrowReturnRight/> Faqqq</button>
+                        <div className="panel">
+                            <p>Lorem ipsum...</p>
+                        </div>
+                    </div>
+                    
+                    <div className="faqDiv">
+                        <button className="faqButton"><BsArrowReturnRight/> O que sei la oque tem que preencher espaço para testar aqui</button>
+                        <div className="panel">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem odit ratione deleniti, repellendus accusantium non iure reprehenderit atque delectus, inventore corporis perferendis dolorum magni quos tempora eum sequi rerum.     </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
     )

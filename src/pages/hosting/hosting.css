@@ -1,14 +1,14 @@
-.hosting #main {
+.hosting .main {
     z-index: 2;
     padding: 140px 0 60px;
     position: relative;
 }
 
-.hosting #main .main-content .container {
+.hosting .main .main-content .container {
     max-width: 900px;
 }
 
-.hosting #main .main-content .container .main-content {
+.hosting .main .main-content .container .main-content {
     color: #ffffff;
     text-align: left;
     margin: 0 auto;
@@ -16,7 +16,7 @@
     width: 90%;
 }
 
-.hosting #main .main-content .container .main-content p {
+.hosting .main .main-content .container .main-content p {
     font-size: 1.4rem;
     line-height: 2.2rem;
 }
@@ -24,12 +24,12 @@
 .cardsPrice {
     padding: 120px 0 100px;
     width: 100%;
-    background: #eeeded;
+    background-image: radial-gradient(ellipse farthest-side at 100% 100%, #fdb8a2 10%, #da3a7a 30%,#131c47 109%);
     position: relative;
     z-index: 10;
 }
 
-.bg {
+.hosting .bg {
     position: absolute;
     top: 0;
     width: 100%;
@@ -66,37 +66,37 @@
     border-radius: 12px 12px 0 0;
 }
 
-.cardsPrice .cards .card h3 {
+.card h3 {
     color: rgb(51, 44, 68);
     font-size: 1.2rem;
     margin: 1rem 0 2rem;
 }
 
-.cardsPrice .cards .card h1 {
+.card h1 {
     color: rgb(51, 44, 68);
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     border-bottom: 1px solid rgb(221, 221, 221);
     padding-bottom: 2rem;
 }
 
-.cardsPrice .cards .card h1 sup {
-    color: rgb(106, 97, 129);
+.card h1 sup {
+    color: rgb(161, 150, 189);
     margin-right: 0.3rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
-.cardsPrice .cards .card h1 sub {
+.card h1 sub {
     color:rgba(122, 110, 153, 0.705);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-.cardsPrice .cards .card p {
+.cards .card p {
     font-size: 0.8rem;
     margin-bottom: 2rem;
 }
 
-.cardsPrice .cards .card .info p {
+.cards .card .info p {
     font-size: 1rem;
     color: rgb(117, 109, 138);
     margin-bottom: 0.7rem;
@@ -106,7 +106,7 @@
     gap: 4px;
 }
 
-.cardsPrice .cards .card a {
+.buttonAccess {
     padding: 12px 0;
     text-align: center;
     width: 80%;
@@ -117,6 +117,133 @@
     transition: 0.3s;
 }
 
-.cardsPrice .cards .card a:hover {
-    background: #d6413c
+.buttonAccess:hover {
+    background: #df5854
+}
+
+.buttonsAndComponents {
+    width: 100%;
+    position: relative;
+    padding: 180px 0 140px;
+    background: #f2f7fb;
+}
+
+.buttonsAndComponents .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+ 
+.buttonsAndComponents .buttons button {
+    background: none;
+    border: 2px solid #474c9a;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #474c9a;
+    cursor: pointer;
+}
+
+.buttonsAndComponents .buttons button:hover {
+    border: 2px solid #1b1e3b;
+}
+
+.showComponent {
+    padding-top: 60px;
+}
+
+.showComponent .component {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.showComponent .component h1 {
+    max-width: 600px;
+    font-size: 3.2rem;
+    width: 90%;
+    color: #47495a;
+}
+
+.showComponent .component .texts {
+    max-width: 600px;
+    width: 90%;
+    display: flex;    
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.showComponent .component .texts h2 {
+    font-size: 22px;
+    color:#6b7c93;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+.showComponent .component .texts p {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    color: #6b7c93;
+    max-width: 500px;
+    line-height: 1.8rem;
+    width: 90%;
+}
+
+@media (max-width: 600px) {
+    .buttonsAndComponents {
+        padding: 60px 0 90px;
+    }
+    .buttonsAndComponents .buttons {
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .buttonsAndComponents .buttons button {
+        padding: 16px 24px;
+        width: 100%;
+    }
+        
+    .showComponent .component h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .buttonsAndComponents .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .showComponent .component h1 {
+        font-size: 2.3rem;
+    }
+
+    .showComponent .component .texts h2 {
+        font-size: 1.3rem;
+    }
+
+    .showComponent .component .texts p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .hosting .main .main-content .container .main-content h1 {
+        font-size: 2rem;
+    }
+
+    .hosting .main .main-content .container .main-content p {
+        font-size: 1.2rem;
+    }
 }

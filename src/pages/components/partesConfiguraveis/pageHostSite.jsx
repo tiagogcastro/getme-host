@@ -1,10 +1,12 @@
+// Cards da pagina de hospedagem de sites
+// Altere qualquer valor
 const allCards = [
     // Totalmente editavel, só clicar e abrir ali e trocar a info que quiser
     {
         id: 1,
         icon: '',
         title: 'Hospede seu Site Pessoal',
-        price: 3.15,
+        price: '35',
         recommended: 'Recomendado para até 5.000 visitas mensais',
         accept: [ // Vai ficar com CONFERE verde
             'Hospeda 1 Domínio',
@@ -17,12 +19,11 @@ const allCards = [
             'Node.js',
             'Ruby',
             'PHP Composer',
+        ],
+        noAccept: [ // Vai ficar com X se caso não tiver
             'Anti-DDOS Premium',
             'Backups Diários',
             'Certificado SSL Grátis',
-        ],
-        noAccept: [ // Vai ficar com X se caso não tiver
-            'Sei la 1'
         ],
         classname: ['card'],
         button: { // Se quiser personalizar o button com cor diferente por exemplo
@@ -34,7 +35,7 @@ const allCards = [
         id: 2,
         icon: '',
         title: 'Hospede seu Site Pessoal',
-        price: 6.65,
+        price: '69,90',
         recommended: 'Recomendado para até 5.000 visitas mensais',
         accept: [ // Vai ficar com CONFERE verde
             'Hospeda 1 Domínio',
@@ -48,11 +49,10 @@ const allCards = [
             'Ruby',
             'PHP Composer',
             'Anti-DDOS Premium',
-            'Backups Diários',
-            'Certificado SSL Grátis',
         ],
         noAccept: [ // Vai ficar com X se caso não tiver
-            'Sei la'
+            'Backups Diários',
+            'Certificado SSL Grátis',
         ],
         classname: ['card'],
         
@@ -65,7 +65,7 @@ const allCards = [
         id: 3,
         icon: '',
         title: 'Hospede seu Site Pessoal',
-        price: 13.65,
+        price: '109,90',
         recommended: 'Recomendado para até 5.000 visitas mensais',
         accept: [ // Vai ficar com CONFERE verde
             'Hospeda 1 Domínio',
@@ -94,6 +94,7 @@ const allCards = [
 ]
 
 
+// Aquela parte onde muda quando clica no botão
 const One = () => (
     <div className="component">
         <h1>Reduzimos o tempo de resposta do seu site em até 10 vezes!</h1>

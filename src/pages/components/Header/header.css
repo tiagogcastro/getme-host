@@ -2,10 +2,16 @@
 
 header.header {
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background:transparent;
     top: 0;
+    transition: 0.3s;
     z-index: 1000;
     position: fixed;
+}
+
+.header.menuScroll{
+    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 header.header .bgHeader {
@@ -62,6 +68,11 @@ header.header img{
 } 
 
 .menu-item-action:hover {
+    color: #ff5555;
+    border-bottom: 2px solid #ff5555;
+}
+
+.active {
     color: #ff5555;
     border-bottom: 2px solid #ff5555;
 }
