@@ -3,6 +3,14 @@ import {} from 'react-icons'
 import { FcCheckmark } from 'react-icons/fc'
 import {allCards, One, Two, Three, Four} from '../components/partesConfiguraveis/pageHostSite'
 
+// images
+import apache from '../../images/apache.png'
+import nginx from '../../images/nginx.png'
+import globe from '../../images/globe.png'
+import icloud_backup_icon from '../../images/icloud-backup-icon.png'
+import letsencrypt from '../../images/letsencrypt.png'
+
+
 // Cards da pagina de hospedagem de sites
 export const Cards = () => (
     <>
@@ -42,10 +50,34 @@ export function ComponentTexts() {
     return (
         <div className="buttonsAndComponents">
             <div className="buttons">
-                <button onClick={() => setRender('one')}>Menos Tempo do site</button>
-                <button onClick={() => setRender('two')}>Menos Tempo da DNS</button>
-                <button onClick={() => setRender('three')}>Certificados SSL</button>
-                <button onClick={() => setRender('four')}>Backups diários</button>
+                <button onClick={() => setRender('one')}>
+                    <p>
+                        <img src={nginx} alt="Ngnix"/>
+                        +
+                        <img src={apache} alt="Apache" />
+                    </p>
+                </button>
+
+                <button onClick={() => setRender('two')}>
+                    <p>
+                        <img src={globe} alt="Menos Tempo da DNS" />
+                        GeoDNS
+                    </p>
+                </button>
+
+                <button onClick={() => setRender('three')}>
+                    <p>
+                        SSL
+                        <img src={letsencrypt} alt="Backups diários" />
+                    </p>
+                </button>
+                
+                <button onClick={() => setRender('four')}>
+                    <p>
+                        <img src={icloud_backup_icon} alt="Certificados SSL" />
+                        Backups Diários
+                    </p>
+                </button>
             </div>
             <div className="showComponent">
                 {MyShitchComponent(render)}

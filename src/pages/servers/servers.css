@@ -95,7 +95,6 @@
 
 .atencion .vpsMarketing .texts h1 strong {
     font-family: cursive;
-    color: #d033ecdf;
 }
 
 .atencion .vpsMarketing .texts h2 {
@@ -103,10 +102,6 @@
     font-size: 1.6rem;
     max-width: 540px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.strongProvision {
-    color: #d033ecdf;
 }
 
 .atencion .vpsMarketing img {
@@ -286,7 +281,7 @@
     width: 30px;
 }
 .location .buttonsLocation .buttonsAndComponents .showComponent .cards .card .info p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     width: 100%;
 }
 
@@ -303,11 +298,12 @@
 }
 
 .showComponent .card .info p, .showComponent .card .accept p {
-    margin-bottom: 0.8rem;
+    margin: 0 2rem 0.8rem 2rem;
 }
 
 .showComponent .card .accept {
     padding-top: 2rem;
+    width: 100%;
     border-top:1px solid rgba(124, 131, 233, 0.8);
 }
 

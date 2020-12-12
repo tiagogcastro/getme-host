@@ -1,6 +1,9 @@
 import React from 'react';
+
+// images svg
 import ondas from '../.././images/svgsBg/ondas.svg'
 import segurity from '../.././images/svgsBg/segurity.svg'
+
 import {Cards, ComponentTexts} from './ComponentsHostingpage'
 
 import './hosting.css'

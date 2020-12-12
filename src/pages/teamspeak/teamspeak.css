@@ -1,0 +1,149 @@
+.home.teamspeak .main{
+    background: linear-gradient(to right bottom, #131c47,
+     #192152, rgb(199, 85, 174),#ff5555);
+}
+
+.myTeamSpeak {
+    width: 100%;
+    padding: 80px 0 120px;
+    background: #c8e4fa;
+}
+
+.myTeamSpeak .tmSpeak {
+    margin-bottom: 2.4rem;
+}
+
+.myTeamSpeak .tmSpeak .container{
+    max-width: 1400px;
+    width: 90%;
+    gap: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5rem;
+}
+
+.myTeamSpeak .tmSpeak img {
+    max-width: 500px;
+    width: 90%;
+}
+
+.myTeamSpeak .tmSpeak .texts {
+    max-width: 500px;
+    width: 90%;
+}
+
+.myTeamSpeak .tmSpeak .texts h1 {
+    max-width: 500px;
+    width: 90%;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: #192152;
+}
+
+.myTeamSpeak .tmSpeak .texts p {
+    max-width: 500px;
+    width: 90%;
+    font-size: 1.1rem;
+    color: #888;
+}
+
+/* Table */
+.myTeamSpeak .table {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.myTeamSpeak .table table {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0;
+}
+
+.myTeamSpeak .table table tbody{
+    width: 100%;
+}
+
+.myTeamSpeak .table table tbody .text{
+    width: 30%;
+}
+
+.myTeamSpeak .table table thead{
+    width: 100%;
+    color: #f1f1f1;
+    background: #ff5555;
+}
+
+.myTeamSpeak .table table thead tr th{
+    text-align: left;
+}
+
+.myTeamSpeak .table table td, th {
+    padding: 24px 16px;
+}
+
+.myTeamSpeak .table table tbody td a {
+    background: #ff5555;
+    color: #f1f1f1;
+    border-radius: 8px;
+    padding: 14px;
+    transition: background .3s;
+}
+
+.myTeamSpeak .table table tbody td a:hover {
+    background: #ca2c2c;
+}
+
+.myTeamSpeak .table table tbody tr:nth-child(odd) {
+	background-color:#ffffff;
+}
+
+.myTeamSpeak .table table tbody tr:nth-child(even) {
+background-color:#dadada;
+}
+
+@media (max-width:1360px) {
+    .myTeamSpeak .table {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .myTeamSpeak .table table tbody .text{
+        width: 30%;
+        overflow: auto;
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .myTeamSpeak .tmSpeak .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .myTeamSpeak .tmSpeak .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .home.teamspeak .main .container h1{
+        text-align: center;
+    }
+
+    .myTeamSpeak{
+        padding: 20px 0 100px;
+    }
+}
+
+@media(max-width: 360px) {
+    .myTeamSpeak .tmSpeak .texts h1 {
+        font-size: 2rem;
+    }
+        
+    .myTeamSpeak .tmSpeak .texts p {
+       text-align: left;
+       font-size: 1rem;
+    }
+}

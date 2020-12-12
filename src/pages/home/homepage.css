@@ -56,31 +56,8 @@
 }
 
 .main .main-content .container img {
-    max-width: 320px;
+    max-width: 260px;
     width: 90%;
-}
-
-.contact {
-    background: #ff5555;
-    border-color: #ff5555;
-    padding: 14px 40px;
-    margin: 1.8rem 0 0;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1.5;
-    font-size: 1rem;
-    border-radius: 4px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    transition: 0.3s;
-}  
-
-.contact:hover {
-    background: #ff3333;
 }
 
 .quality {
@@ -102,7 +79,7 @@
 
 .quality .allQualitys .divQuality {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction:  column;
     max-width: 700px;
@@ -308,72 +285,11 @@
     left: -8%;
 }
 
-.myFaq {
-    width: 100%;
-    border-top: 1px solid rgb(212, 212, 212);
-}
-
-.myFaq .faq {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 0 140px;
-}
-
-.myFaq .faq h1{
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto 2rem;
-    font-size: 2.4rem;
-    text-align: center;
-    color: #192152;
-}
-
-.myFaq .faq .lead{
-    max-width: 600px;
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    color: #666;
-}
-
-.faqDiv {
-    padding: 12px 0;
-    border-bottom: 1px solid #192152;
-    width: 90%;
-    margin: 24px auto 0;
-}
-
-.faqButton {
-    background: none;
-    border-radius: 8px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 18px;
-    font-size: 1.2rem;
-    color: #131c47;
-    max-width: 900px;
-    width: 90%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  .panel {
-    padding: 4px 18px 16px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    max-width: 900px;
-    width: 90%;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    transition: 0.3s;
-  }
-
-  @media(max-width: 1300px) {
+@media(max-width: 1300px) {
+    .quality .allQualitys .divQuality {
+        align-items: center;
+        margin-bottom: 2rem;
+    }
     .quality .allQualitys .divQuality h1{
         text-align: center;
         max-width: 800px;

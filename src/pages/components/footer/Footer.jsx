@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import cloudFooter from '../../../images/svgsBg/cloudFooter.svg';
+import cloudFooter2 from '../../../images/svgsBg/cloudFooter2.svg';
 
 const date = new Date();
 const year = date.getFullYear();
@@ -9,7 +9,7 @@ export default function Footer() {
     return (
     <section className="footer">
         <div className="endSiteFooter">
-            <img src={cloudFooter} alt=""/> 
+            <img src={cloudFooter2} alt=""/> 
             <div className="container-text">
                 <h1>Tudo o que você precisa para revolucionar sua hospedagem</h1>
                 <p>Fale com nossos especialistas e descubra a solução perfeita para atender as demandas do seu projeto.</p>
@@ -17,9 +17,10 @@ export default function Footer() {
         </div>
         <footer className="footerEnd">
             <div className="legal">
-                <a href="">Informações Legais</a>
-                <a href="">Termos de Serviço</a>
-                <a href="">Política de Utilização Aceitável</a>
+                {/* Usar <a href="https://..."> Nome </a> Tira a class buttonLock para deixar o cursor: pointer !!*/}
+                <a className="buttonLock">Informações Legais</a>
+                <a className="buttonLock">Termos de Serviço</a>
+                <a className="buttonLock">Política de Utilização Aceitável</a>
             </div>
             <div className="container-footer">
                 <div className="footer-texts">

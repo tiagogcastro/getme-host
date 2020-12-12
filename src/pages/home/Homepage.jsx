@@ -1,11 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './homepage.css'
 import cloudHome from '../.././images/svgsBg/cloudHome.svg'
 import rocket from '../.././images/svgsBg/rocket.svg'
 
 import ondas from '../.././images/svgsBg/ondas.svg'
-import {AiFillPhone} from 'react-icons/ai'
-import {BsArrowReturnRight} from 'react-icons/bs'
 
 function chat() {
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -20,24 +18,7 @@ function chat() {
     })();
 }
 
-
 export default function HomePage() {
-    useEffect(() => {
-        let Faqbutton = document.getElementsByClassName("faqButton");
-        let i;
-        for (i = 0; i < Faqbutton.length; i++) {
-            Faqbutton[i].addEventListener("click", function() {
-            this.classList.toggle("panelActive");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-        }
-    }, [])
-    
     return (
         <div className="home">
             <main className="main">
@@ -48,7 +29,6 @@ export default function HomePage() {
                             <p>
                             Já somos mais de 100.000 servidores vendidos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
-                            <a href="https://financeiro.provision.gg/contact.php" className="contact"><AiFillPhone/> Contato</a>
                         </div>
                         <img src={cloudHome} alt=""/>
                     </div>
@@ -122,32 +102,6 @@ export default function HomePage() {
                 </div>
             </section>
             {chat()}
-            <section className="myFaq">
-                <div className="faq">
-                    <h1>Hospedagem - Perguntas mais frequentes(FAQ)</h1>
-                    <p className="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur molestias, ipsam ea aliquam libero enim.</p>
-                    <div className="faqDiv">
-                        <button className="faqButton"><BsArrowReturnRight/> O que sei la oque tem que preencher espaço para testar aqui</button>
-                        <div className="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-
-                    <div className="faqDiv">
-                        <button className="faqButton"><BsArrowReturnRight/> Faqqq</button>
-                        <div className="panel">
-                            <p>Lorem ipsum...</p>
-                        </div>
-                    </div>
-                    
-                    <div className="faqDiv">
-                        <button className="faqButton"><BsArrowReturnRight/> O que sei la oque tem que preencher espaço para testar aqui</button>
-                        <div className="panel">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem odit ratione deleniti, repellendus accusantium non iure reprehenderit atque delectus, inventore corporis perferendis dolorum magni quos tempora eum sequi rerum.     </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
 
     )

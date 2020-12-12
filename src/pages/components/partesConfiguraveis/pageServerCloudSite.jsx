@@ -1,20 +1,21 @@
 import React, {useState} from 'react';
 import Brasil from '../../../images/svgsBg/brasil.svg'
 import usa from '../../../images/svgsBg/usa.svg'
+
 import { FcCheckmark } from 'react-icons/fc'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 
+import {GrDatabase} from 'react-icons/gr'
+import {RiCpuLine} from 'react-icons/ri'
+import {CgServer} from 'react-icons/cg'
+import {HiShieldCheck} from 'react-icons/hi'
+
 // Cards com o valor em moeda do BRASIL
 const valuesBr = [
+    // Card 1
     {
         title: '1GB',
         price: '15,50',
-        infos: [
-            '1GB de Memória RAM',
-            '1 núcleo de CPU',
-            '20GB de disco SSD',
-            'Anti-DDOS Premium'
-        ],
         accept: [
             'Painel de Controle',
             '1Gbps de Uplink',
@@ -22,18 +23,12 @@ const valuesBr = [
             'IP Dedicado',
         ],
         linkButton: "https://google.com",
-        buttonText: 'Assinar agora'
-
+        buttonText: 'Assinar agora',
     },
+    // Card 2
     {
         title: '1GB',
         price: '45,90',
-        infos: [
-            '1GB de Memória RAM',
-            '1 núcleo de CPU',
-            '20GB de disco SSD',
-            'Anti-DDOS Premium'
-        ],
         accept: [
             'Painel de Controle',
             '1Gbps de Uplink',
@@ -41,18 +36,13 @@ const valuesBr = [
             'IP Dedicado',
         ],
         linkButton: "https://google.com",
-        buttonText: 'Assinar agora '
-    },
+        buttonText: 'Assinar agora',
 
+    },
+    // Card 3
     {
         title: '1GB',
         price: '120,90',
-        infos: [
-            '1GB de Memória RAM',
-            '1 núcleo de CPU',
-            '20GB de disco SSD',
-            'Anti-DDOS Premium'
-        ],
         accept: [
             'Painel de Controle',
             '1Gbps de Uplink',
@@ -67,15 +57,10 @@ const valuesBr = [
 
 // Cards com o valor em moeda dos Estados Unidos
 const valuesUsa = [
+    // Card 1
     {
         title: 'Cloud 1GB',
         price: 39,
-        infos: [
-            '1GB de Memória RAM',
-            '1 núcleo de CPU',
-            '20GB de disco SSD',
-            'Anti-DDOS Premium'
-        ],
         accept: [
             'Painel de Controle',
             '1Gbps de Uplink',
@@ -86,15 +71,10 @@ const valuesUsa = [
         buttonText: 'Assinar agora '
 
     },
+    // Card 2
     {
         title: 'Cloud 1GB',
         price: 39,
-        infos: [
-            '1GB de Memória RAM',
-            '1 núcleo de CPU',
-            '20GB de disco SSD',
-            'Anti-DDOS Premium'
-        ],
         accept: [
             'Painel de Controle',
             '1Gbps de Uplink',
@@ -105,15 +85,10 @@ const valuesUsa = [
         buttonText: 'Assinar agora '
 
     },
+    // Card 3
     {
         title: 'Cloud 1GB',
         price: 39,
-        infos: [
-            '1GB de Memória RAM',
-            '1 núcleo de CPU',
-            '20GB de disco SSD',
-            'Anti-DDOS Premium'
-        ],
         accept: [
             'Painel de Controle',
             '1Gbps de Uplink',
@@ -136,9 +111,10 @@ const Br = () => {
                 <h3><img src={Brasil} alt=""/> Cloud <strong>{value.title}</strong></h3>
                 <h1><sup>R$</sup>{value.price}<sub>/mês</sub></h1>
                 <div className="info">
-                    {value.infos.map((infoValue, index)=> (
-                        <p key={index}>{infoValue}</p>
-                    ))}
+                    <p><GrDatabase /> 1GB de Memória RAM</p>
+                    <p><RiCpuLine /> 1 núcleo de CPU</p>
+                    <p><CgServer /> 20GB de disco SSD</p>
+                    <p><HiShieldCheck /> Anti-DDOS Premium</p>
                 </div>
                 <div className="accept">
                     {value.accept.map((acceptValue, index)=> (
@@ -152,7 +128,6 @@ const Br = () => {
     )
 }
 
-
 // Construção do card do Estado Unidos, ao mexer, poderá estar modificando a estilização 
 const Usa = () => {
     return (
@@ -162,9 +137,10 @@ const Usa = () => {
                 <h3><img src={usa} alt=""/> {value.title}</h3>
                 <h1><sup>$</sup>{value.price}<sub>/mês</sub></h1>
                 <div className="info">
-                    {value.infos.map((infoValue, index)=> (
-                        <p key={index}>{infoValue}</p>
-                    ))}
+                    <p><GrDatabase /> 1GB de Memória RAM</p>
+                    <p><RiCpuLine /> 1 núcleo de CPU</p>
+                    <p><CgServer /> 20GB de disco SSD</p>
+                    <p><HiShieldCheck /> Anti-DDOS Premium</p>
                 </div>
                 <div className="accept">
                     {value.accept.map((acceptValue, index)=> (

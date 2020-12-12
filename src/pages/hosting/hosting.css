@@ -131,7 +131,7 @@
 .buttonsAndComponents {
     width: 100%;
     position: relative;
-    padding: 180px 0 140px;
+    padding: 70px 0 100px;
     background: #f2f7fb;
 }
 
@@ -145,7 +145,7 @@
  
 .buttonsAndComponents .buttons button {
     background: none;
-    border: 2px solid #474c9a;
+    border: none;
     padding: 16px 32px;
     border-radius: 8px;
     font-size: 0.9rem;
@@ -153,8 +153,14 @@
     cursor: pointer;
 }
 
-.buttonsAndComponents .buttons button:hover {
-    border: 2px solid #1b1e3b;
+.buttonsAndComponents .buttons button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    color: #666;
+    outline: none;
 }
 
 .showComponent {
@@ -208,10 +214,8 @@
         padding: 60px 0 90px;
     }
     .buttonsAndComponents .buttons {
-        display: grid;
+        flex-direction: column;
         width: 90%;
-        margin: 0 auto;
-        grid-template-columns: 1fr 1fr;
     }
 
     .buttonsAndComponents .buttons button {

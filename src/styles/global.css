@@ -26,3 +26,30 @@ body {
     color: #ff3333;
     border-bottom: 2px solid #ff3333;
 }
+
+.strongProvision {
+    color:  #ff5555;
+}
+
+.contact {
+    background: #ff5555;
+    border-color: #ff5555;
+    padding: 14px 40px;
+    margin: 1.8rem 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 1rem;
+    border-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}  
+
+.contact:hover {
+    background: #ff3333;
+}

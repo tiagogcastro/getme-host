@@ -37,16 +37,6 @@ export default function Header() {
             if (window.scrollY > 20) header.classList.add('menuScroll'); 
             else header.classList.remove('menuScroll');
         });
-        // const currentPage = window.location.pathname
-        // const menuItems = document.querySelectorAll('.header .menu-item a')
-
-        // for (let item of menuItems) {
-        //     if(currentPage == item.getAttribute('href')) {
-        //         item.classList.add('active')
-        //     }
-        //     console.log(currentPage)
-        // }
-
     }, [])
     
     return (
@@ -90,9 +80,9 @@ export default function Header() {
                             </Link>
                         </li>
                         <li className="menu-item">
-                            <Link to="/servidor-cloud" 
+                            <Link to="/teamSpeak" 
                             className="menu-item-action">
-                               <AiFillPhone/> Suporte
+                               <AiFillPhone/> TeamSpeak
                             </Link>
                         </li>
                         <li className="menu-item login">
