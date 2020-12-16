@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import cloudFooter2 from '../../../images/svgsBg/cloudFooter2.svg';
+import cloudFooter2 from '../../images/svgsBg/cloudFooter2.svg';
 
 const date = new Date();
 const year = date.getFullYear();
@@ -22,10 +22,11 @@ export default function Footer() {
                 <a className="buttonLock">Termos de Serviço</a>
                 <a className="buttonLock">Política de Utilização Aceitável</a>
             </div>
+            
             <div className="container-footer">
                 <div className="footer-texts">
                     <h5>Reembolso Garantido</h5>
-                    <p>7 dias de moneyback garantido.</p>
+                    <p>Tenha seu dinheiro de volta.</p>
                 </div>
                 <div className="footer-texts">
                     <h5>Suporte 5 Estrelas</h5>
@@ -36,8 +37,8 @@ export default function Footer() {
                     <p>Cancele quando quiser.</p>
                 </div>
                 <div className="footer-texts">
-                    <h5>Serviços Pré-pagos</h5>
-                    <p>Pague apenas quando quiser.</p>
+                    <h5>Segurança</h5>
+                    <p>Seus dados estarão seguros.</p>
                 </div>
             </div>
             

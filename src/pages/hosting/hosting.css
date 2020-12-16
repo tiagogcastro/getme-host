@@ -69,6 +69,7 @@
     background: #f1f1f6;    
     box-shadow: 0 4px 9px 0 rgba(23, 28, 33, 0.06);
     border-radius: 12px 12px 0 0;
+    position: relative;
 }
 
 .card h3 {

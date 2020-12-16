@@ -254,6 +254,7 @@
     border-radius: 12px;    
     max-width: 400px;
     width: 100%;
+    position: relative;
 }
 
 .showComponent .card h1 {
@@ -316,6 +317,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     gap: 8px;
 }
 .showComponent .card  .buttonAccess:hover {

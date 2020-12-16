@@ -53,3 +53,15 @@ body {
 .contact:hover {
     background: #ff3333;
 }
+
+.populate {
+    position: absolute;
+    top: 0;
+    left: 38%;
+    z-index: 2;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    background: #df5854;
+    border-radius: 0 0 8px 8px;
+}

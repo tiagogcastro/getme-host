@@ -8,7 +8,7 @@ import Pay from '../.././images/svgsBg/pay.svg'
 // Css
 import './servers.css'
 // Components
-import Location from '../components/partesConfiguraveis/pageServerCloudSite'
+import Location from '../../components/partesConfiguraveis/pageServerCloudSite'
 
 export default function Serverspage() {
     return (

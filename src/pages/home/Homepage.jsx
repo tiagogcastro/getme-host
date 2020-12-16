@@ -5,19 +5,6 @@ import rocket from '../.././images/svgsBg/rocket.svg'
 
 import ondas from '../.././images/svgsBg/ondas.svg'
 
-function chat() {
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (
-        function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/5fcfd47aa1d54c18d8f1b449/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-    })();
-}
-
 export default function HomePage() {
     return (
         <div className="home">
@@ -25,9 +12,9 @@ export default function HomePage() {
                 <div className="main-content">
                     <div className="container"> 
                         <div className="main-content">
-                            <h1>Hospede seu site com qualidade.<br/> Venha com a <strong className="strongProvision">ProVision.</strong></h1>
+                            <h1>Hospede seu projeto com qualidade.<br/> Venha com a <strong className="strongProvision">ProVision.</strong></h1>
                             <p>
-                            Já somos mais de 100.000 servidores vendidos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Serviços de alta qualidade que cabem no seu bolso.
                             </p>
                         </div>
                         <img src={cloudHome} alt=""/>
@@ -40,7 +27,7 @@ export default function HomePage() {
                     <div className="contFeat">
                         <div
                         className="features-container-content">
-                            <h1>Serviços completos para todas indústrias.</h1>
+                            <h1>Serviços completos para todas as suas necessidades.</h1>
                             <p className="lead">
                                 De projetos pequenos que necessitam de melhor custo/benefício, à projetos grandes que necessitam de maior performance e confiabilidade, nós temos a solução ideal para o seu projeto!
                             </p>
@@ -57,19 +44,19 @@ export default function HomePage() {
                     </div>
                     <div className="myTextsQuality">
                         <div className="texts">
-                            <h1>Facilidade</h1>
-                            <strong>Depois poem algum texto top aqui</strong>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates beatae eligendi id perspiciatis a voluptatum optio? Debitis maxime accusamus facilis aut, obcaecati laudantium numquam quaerat dolor harum mollitia. Ab.</p>
+                            <h1>Custo Benefício</h1>
+                            <strong>Os melhores preços do mercado</strong>
+                            <p>Nós da <strong className="strongProvision">ProVision</strong> temos os preços mais baixos do mercado, oferecendo aos nossos clientes serviços de extrema qualidade.</p>
                         </div>
                         <div className="texts">
                             <h1>Segurança</h1>
-                            <strong>Proteção 24h para sua hospedagem</strong>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates beatae eligendi id perspiciatis a voluptatum optio? Debitis maxime accusamus facilis aut, obcaecati laudantium numquam quaerat dolor harum mollitia. Ab.</p>
+                            <strong>Proteção 24h para seus projetos</strong>
+                            <p>A segurança do seu projeto está em primeiro lugar! Monitoramos nossos servidores 24h para garantir máxima estabilidade. Todos os seus dados estão em segurança conosco.</p>
                         </div>
                         <div className="texts">
-                            <h1>Velocidade</h1>
-                            <strong>Processadores da melhor qualidade no mercado</strong>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates beatae eligendi id perspiciatis a voluptatum optio? Debitis maxime accusamus facilis aut, obcaecati laudantium numquam quaerat dolor harum mollitia. Ab.</p>
+                            <h1>Facilidade</h1>
+                            <strong>Compre e receba na mesma hora</strong>
+                            <p>Nós da <strong className="strongProvision">ProVision</strong> possuímos nossas mercadorias a ponta-entrega. Após a confirmação do pagamento, seu produto será gerado automaticamente e já será encaminhado para você.</p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +88,6 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            {chat()}
         </div>
 
     )

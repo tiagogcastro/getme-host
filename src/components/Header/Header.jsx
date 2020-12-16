@@ -9,7 +9,7 @@ import {BsCloudDownload} from 'react-icons/bs'
 import {FaServer} from 'react-icons/fa';
 import {AiFillPhone} from 'react-icons/ai'
 
-import Logo from '../../../images/logo.png'
+import Logo from '../../images/logo.png'
 
 export default function Header() {
     useEffect(() => {
@@ -76,7 +76,7 @@ export default function Header() {
                         <li className="menu-item">
                             <Link to="/servidor-cloud" 
                             className="menu-item-action">
-                               <BsCloudDownload/> Servidor Cloud/Vps
+                               <BsCloudDownload/> Servidor Vps
                             </Link>
                         </li>
                         <li className="menu-item">

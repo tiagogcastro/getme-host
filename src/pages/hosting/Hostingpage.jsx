@@ -4,7 +4,7 @@ import React from 'react';
 import ondas from '../.././images/svgsBg/ondas.svg'
 import segurity from '../.././images/svgsBg/segurity.svg'
 
-import {Cards, ComponentTexts} from './ComponentsHostingpage'
+import {Cards, ComponentTexts} from '../../components/partesConfiguraveis/pageHostSite';
 
 import './hosting.css'
 

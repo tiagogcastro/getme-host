@@ -1,7 +1,7 @@
 import React from 'react';
 
 import contact from '../.././images/svgsBg/contact.svg'
-import Table from '../components/partesConfiguraveis/pageTeamSpeak'
+import Table from '../../components/partesConfiguraveis/pageTeamSpeak'
 
 import './teamspeak.css'
 

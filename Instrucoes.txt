@@ -1,0 +1,33 @@
+Leia para entender o cenário atual do código, principalmente se você não é programador e quer editar algo dentro de algum card, por exemplo: alterar o preço.
+
+Tópico 1 {
+
+A pasta AllConfigCardsOther que contém o arquivo index.jsx é onde você pode editar os cards das páginas de Hospedagem de sites, Servidor VPS e a tabela da página do TeamSpeak;
+}
+
+Tópico 2 {
+
+Pasta home é onde fica a página Home do site;
+Pasta hosting é onde fica a página Hospedagem de Site;
+Pasta servers é onde fica a página de Servidor VPS;
+Pasta teamspeak é onde fica a página do TeamSpeak no site;
+}
+
+Tópico 3{
+
+A pasta partesConfiguraveis contém os arquivos de configuração de algumas coisas, como por exemplo, a criação dos cards da página de Servidor VPS;
+
+No arquivo pageHostSite.jsx fica os textos da página de hospedagem de Sites, aquela parte onde clica e altera o texto;
+
+No arquivo pageServerCloudSite.jsx é onde é a estruturação dos cards do Br e Usa na página de Servidor VPS;
+
+No arquivo pageTeamSpeak.jsx é onde fica a estruturação da table da página do TeamSpeak;
+}
+
+Tópico 4 {
+    Bem declarativo até, mas:
+    A Pasta footer é a parte de baixo do site;
+    A pasta header é a parte de cima do site(navbar);
+}
+
+Obs: Essas instruções estão sendo feitas de acordo com o cenário atual do código(16/12/20 Br). Se caso vier a mudar algo nos arquivos tem que alterar aqui para ficar atualizado para quem for editar algo (alguém que não for programador, já que os arquivos são estáticos, nada é guardado em banco de dados..);
