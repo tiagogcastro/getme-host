@@ -1,121 +1,52 @@
-<h1 align="center"> Getme Host </h1>
+# getme-host
 
-<p align="center">🔍 Navegação dentro do Readme. </p>
+![React](https://img.shields.io/badge/React-17-61DAFB?logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
+![React Router](https://img.shields.io/badge/react__router--dom-5-CA4245?logo=reactrouter&logoColor=white)
 
-<div align="center">
+Getme Host is a marketing site for a hosting provider: plan and pricing pages
+for web hosting, VPS servers and TeamSpeak servers, built with React.
 
-  [![](https://img.shields.io/badge/-Sobre-5276f2)](#sobre-o-projeto)
-  [![](https://img.shields.io/badge/-Tecnologias-5276f2)](#techs)
-  [![](https://img.shields.io/badge/-Começando-5276f2)](#rodar-projeto)
-  [![](https://img.shields.io/badge/-Contribuir-5276f2)](#contribuir)
-  [![](https://img.shields.io/badge/-Social-5276f2)](#rede-social)
-  [![](https://img.shields.io/badge/-Licença-5276f2)](#license)
+## Features
 
-</div>
+- Dedicated pages for web hosting, VPS and TeamSpeak plans plus home page
+- Centralized pricing card configuration (`src/components/AllConfigCardsOther`): plan prices, texts and card contents can be edited in a single place without touching page components
+- Configurable page sections under `src/components/partesConfiguraveis`
+- Client-side routing with React Router
 
-</br></br>
+## Tech stack
 
-<div align="left">
-  <h1 id="sobre-o-projeto"> ✅ Sobre o projeto </h1>
-  <p>
-    Este projeto é feito para ser um site de vendas de host.
-  </p>
-</div>
+| Layer | Tools |
+|---|---|
+| Language | JavaScript (JSX) |
+| UI | React 17, Create React App 4, react-icons |
+| Routing | react-router-dom 5 |
 
-</br>
+## How to run
 
-___
+```bash
+# requirements: Node.js 14-16 era runtime (see legacy note)
+yarn install
+yarn start    # http://localhost:3000
+```
 
-<div align="left"> 
-  <h1 id="techs">🚀 Tecnologias Utilizadas </h1> 
-  <p>
-    Utilizei o VsCode para fazer os códigos em ReactJS e Css.
-  </p>
-  <p>
-    Utilizei o Css para fazer a estilização das telas.
-  </p>
-  <div>
-    <p>
-      ➡
-      <a href="https://pt-br.reactjs.org"> ReactJS</a>
-    </p>
-    <p>
-      ➡
-      <a href="https://code.visualstudio.com"> VsCode</a>
-    </p>
-    <p>
-      ➡
-      <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> Css</a>
-    </p>
-  </div>
-</div> 
+Tip: to change prices or card texts, edit the files inside
+`src/components/AllConfigCardsOther`; no changes to page code are needed.
+(`Instrucoes.txt` documents this workflow in Portuguese.)
 
-</br>
+## Legacy note
 
-___
+Project from 2020-2021 with era-pinned dependencies (React 17, CRA 4).
+Expect friction on current Node versions without upgrades. Estimated
+modernization effort if picked up later: small (half-day), mainly migrating
+CRA to Vite and bumping dependencies. No fixes are planned as part of this
+cleanup phase.
 
-<div align="left">
-  <h1 id="rodar-projeto">💻 Como rodar o projeto na sua máquina da forma que rodei na minha</h1>
-  <p>➡ Instalar o NodeJS na sua máquina. <p>
+## License
 
-  <p>➡ Vá no cmd dele(no Vscode o nome é "terminal") ou abra o cmd da sua máquina, digite e execute: </p>
-  <p> 
+[MIT](LICENSE)
 
-    git clone https://github.com/Tiaguin061/Getme-host
-  </p>
-  <p>➡ Entre na pasta do projeto(a que acabou de clonar), digite e execute o comando: </p>
-  <p>
+## Author
 
-    yarn
-  </p>
-  <p>➡ Para ver os comandos disponíveis e dependências instaladas, vá no arquivo package.json. </p>
-  
-  <p>➡ Você precisa ter o Nodejs instalado na sua máquina.</p>
-
-  <p>➡ Por fim, ao fazer tudo certinho, execute o comando:</p>
-  <p>
-
-    yarn start
-  </p>
-
-  <p>❤ Pronto, seu projeto está certinho para funcionar.</p>
-  <p> Algum erro? Contate-me. </p>
-</div>
-
-</br>
-
-___
-
-<div align="left">
-  <h1 id="contribuir">🔗 Como contribuir com o projeto</h1>
-  <div>
-    <p> 1° - Faça um Fork do repositório; </p>
-    <p> 2° - Clone o repositório; </p>
-    <p> 3° - Crie uma branch com a sua feature; </p>
-    <p> 4° - Faça um commit bem descritivo com suas mudanças; </p>
-    <p> 5° - Dê 'Push' a sua branch; </p>
-    <p> 6° - Ir em Pull Requests do projeto original e criar uma pull request com o seu commit; </p>
-    <p>
-     ➡ Caso tenha dúvidas sobre como criar um pull request, 
-      <a 
-        href="https://docs.github.com/pt/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request"> clique neste link.
-      </a>  
-    </p>
-  </div>
-</div>
-
-</br>
-
-___
-
-<div align="left">
-  <h1 id="rede-social">📱 Minhas redes sociais</h1>
-  <p> Eu me chamo Tiago Gonçalves, abaixo deixo os links das minhas principais redes na qual participo.
-  </p>
-
-  [![](https://img.shields.io/badge/-Github-434140)](https://github.com/Tiaguin061)
-  [![](https://img.shields.io/badge/-Linkedin-3DC3C9)](https://www.linkedin.com/in/tiagogoncalves200428/)
-  [![](https://img.shields.io/badge/-Instagram-EA3C7A)](https://www.instagram.com/tiaguinho_gon1/?hl=pt-br)
-  [![](https://img.shields.io/badge/-Discord-5276f2)](https://discord.com/users/586186122611130368)
-
-</div>
+Built by [Tiago Gonçalves de Castro](https://github.com/tiagogcastro)
+· [LinkedIn](https://www.linkedin.com/in/tiagogcastro)
